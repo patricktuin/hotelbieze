@@ -1,0 +1,31 @@
+<div class="container" ng-controller="guestController">
+	<div class="page-header">
+		<h1>Gasten</h1>
+	</div>
+
+	<div class="container">
+		<div class="guestList">
+			<table class="table table-striped">
+				<th>Naam</th>
+				<th>Attend</th>
+				<th>Change</th>
+				<tr ng-repeat="guest in guests">
+					<td>{{guest.name}}</td>
+					<td>{{guest.attend}}</td>
+					<td><button ng-click="changeAttend(guest._id)">Change</button></td>
+					<td><button type="submit" class="btn btn-default" ng-click="deleteGuest()">Verwijder Gast toe</button></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+
+	<div class="container">
+		<form role="form">
+			<label><h4>Naam</h4></label><input type="text" id="name" ng-model="formData.name">
+			<label><h4>Attend</h4></label><input type="text" id="attend" ng-model="formData.attend">
+			<button type="submit" class="btn btn-default" ng-click="addGuest()">Voeg Gast toe</button>
+		</form>
+	</div>
+
+
+</div>
