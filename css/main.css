@@ -1,34 +1,62 @@
-@font-face {
-  font-family: 'Glyphicons Halflings';
-  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot");
-  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
-}
-/* line 15, ../sass/main.scss */
-.main {
-  max-width: 1200px !important;
-  margin: auto;
-}
-
-/* line 20, ../sass/main.scss */
-.navbar {
-  border-radius: 0px;
-  background-color: #DBB84D;
+/* line 2, ../sass/_navbar.scss */
+.navbar-collapse {
   border: none;
-  max-height: 50px;
-  margin-bottom: 0px;
-}
-/* line 27, ../sass/main.scss */
-.navbar a {
-  color: black !important;
-  margin-right: 20px;
 }
 
-/* line 34, ../sass/main.scss */
+/* line 8, ../sass/_navbar.scss */
+.navbar-toggle {
+  background-color: #FFB84D !important;
+  border-color: #222222 !important;
+}
+/* line 12, ../sass/_navbar.scss */
+.navbar-toggle .icon-bar {
+  background-color: #222222 !important;
+}
+
+/* line 19, ../sass/_navbar.scss */
+.navbar-default {
+  background-color: #FFB84D !important;
+  opacity: 1;
+  border: none !important;
+  font-family: bitter;
+}
+/* line 25, ../sass/_navbar.scss */
+.navbar-default a {
+  color: #222222 !important;
+}
+/* line 29, ../sass/_navbar.scss */
+.navbar-default a:hover {
+  text-shadow: #FFB84D !important;
+}
+
+/* line 35, ../sass/_navbar.scss */
 .navbar .nav > .active > a,
 .navbar .nav > .active > a:hover,
 .navbar .nav > .active > a:focus
 .navbar .nav > li > a:focus,
 .navbar .nav > li > a:hover,
 .dropdown-toggle.active {
-  background-color: #FFB84D;
+  background-color: #FFD18D;
+}
+
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot");
+  src: url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.eot?#iefix") format("embedded-opentype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.woff") format("woff"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.ttf") format("truetype"), url("/bower_components/bootstrap/dist/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular") format("svg");
+}
+/* line 14, ../sass/main.scss */
+body {
+  background-color: lightgrey;
+  background: url("http://www.designbolts.com/wp-content/uploads/2013/02/Textured-Stripes-Grey-Seamless-Patterns-For-Website-Background.jpg") fixed;
+}
+
+/* line 37, ../sass/main.scss */
+.footer {
+  margin-bottom: 20px;
+}
+
+/* line 41, ../sass/main.scss */
+.thumbnail {
+  border-radius: 0;
+  box-shadow: 0;
 }
